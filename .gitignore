@@ -348,3 +348,10 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+
+/answer.js
+/answer.ts
+/modules
+/old
+/testdata.json
