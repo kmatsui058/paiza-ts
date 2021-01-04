@@ -23,7 +23,8 @@
     "start": "npm-run-all -p build test",
     "build": "webpack",
     "test": "jest --watch --watchAll",
-    "next": "ts-node task/next.ts"
+    "next": "ts-node task/next.ts",
+    "initial": "ts-node task/initial.ts"
   },
   "author": "",
   "license": "ISC"

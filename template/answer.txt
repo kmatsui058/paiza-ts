@@ -1,4 +1,4 @@
 export default function main(lines: string[], debug = false): string {
 
 }
-global.main = main
+Object.defineProperty(global, 'main', {value: main})
