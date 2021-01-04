@@ -350,7 +350,7 @@ MigrationBackup/
 .ionide/
 
 
-/src/answer.js
+/dist/answer.js
 /src/answer.ts
 /src/modules
 /src/testdata.json

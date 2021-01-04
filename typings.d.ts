@@ -4,3 +4,8 @@ declare interface TestData {
 }
 
 declare module '*.json' 
+
+interface Global {
+    main: function
+  }
+  declare var global: Global

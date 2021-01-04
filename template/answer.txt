@@ -1,5 +1,4 @@
-export default function main(lines: string[]): string {
-}
+export default function main(lines: string[], debug = false): string {
 
-// @ts-ignore
-console.log(main(lines))
+}
+global.main = main
