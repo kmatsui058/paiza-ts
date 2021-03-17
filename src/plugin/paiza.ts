@@ -1,6 +1,6 @@
 
 const dtElements = document.getElementsByClassName('sample-content__title')
-const result: {input: string, output: string}[] = []
+const result: { input: string, output: string }[] = []
 
 function titleToValue(element: HTMLElement): string | null {
     const parent = element.parentElement
@@ -31,10 +31,12 @@ for (const index in dtElements) {
         }
     }
 }
-const confirmResult = confirm(`値をクリップボードにコピーしますか？${JSON.stringify(result)}`)
-if(confirmResult) {
-    setTimeout(async () => {
-        await navigator.clipboard.writeText(JSON.stringify(result))
-        console.log("copied")
-    }, 1000)
+if (result.length) {
+    const confirmResult = confirm(`値をクリップボードにコピーしますか？${JSON.stringify(result)}`)
+    if (confirmResult) {
+        setTimeout(async () => {
+            await navigator.clipboard.writeText(JSON.stringify(result))
+            console.log("copied")
+        }, 1000)
+    }
 }

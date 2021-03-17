@@ -79,17 +79,19 @@ for (var index in dtElements) {
         }
     }
 }
-var confirmResult = confirm("\u5024\u3092\u30AF\u30EA\u30C3\u30D7\u30DC\u30FC\u30C9\u306B\u30B3\u30D4\u30FC\u3057\u307E\u3059\u304B\uFF1F" + JSON.stringify(result));
-if (confirmResult) {
-    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, navigator.clipboard.writeText(JSON.stringify(result))];
-                case 1:
-                    _a.sent();
-                    console.log("copied");
-                    return [2 /*return*/];
-            }
-        });
-    }); }, 1000);
+if (result.length) {
+    var confirmResult = confirm("\u5024\u3092\u30AF\u30EA\u30C3\u30D7\u30DC\u30FC\u30C9\u306B\u30B3\u30D4\u30FC\u3057\u307E\u3059\u304B\uFF1F" + JSON.stringify(result));
+    if (confirmResult) {
+        setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, navigator.clipboard.writeText(JSON.stringify(result))];
+                    case 1:
+                        _a.sent();
+                        console.log("copied");
+                        return [2 /*return*/];
+                }
+            });
+        }); }, 1000);
+    }
 }
