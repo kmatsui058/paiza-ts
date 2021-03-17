@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/answer.ts',
+  entry: ['./src/answer.ts','./template/output.js'],
   mode: 'production',
   module: {
     rules: [
