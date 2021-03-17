@@ -10,3 +10,5 @@ export default function main(lines: string[], debug = false): string {
     if(debug) console.log('hoge')
     return result.toFixed()
 }
+//@ts-ignore
+Object.defineProperty(global, 'main', {value: main})
